@@ -1,0 +1,11 @@
+server:
+  error.include: message
+spring:
+  sql.init.mode: always
+  h2.console.enabled: true
+  jpa.hibernate.ddl-auto: create-drop
+  datasource:
+    url: jdbc:h2:file:./db/SNAPSHOT;MODE=PostgreSQL
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
